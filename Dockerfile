@@ -10,7 +10,7 @@ WORKDIR /usr/src/app
 # where available (npm@5+)
 COPY package*.json ./
 
-RUN npm install @angular/cli
+RUN npm install -g @angular/cli
 RUN ng new app_test
 RUN cd app_test
 RUN ng serve --open
